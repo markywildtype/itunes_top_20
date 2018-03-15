@@ -25,12 +25,18 @@ class ChartContainer extends Component{
 
   render(){
     const songInfo = this.state.allSongs.map((song, index) => {
-        return {key: index, title: song.title.label, position: index + 1}
+        return {
+          key: index,
+          artist: song["im:artist"].label,
+          title: song["im:name"].label,
+          position: index + 1,
+          image: song["im:image"][0].label
+        }
 
     });
     return (
       <div className="chart-container">
-        <h1>Here's yer chart!</h1>
+        <h1>It's only yer actual iTunes Top 20 chart!</h1>
         <ChartList songInfo={songInfo}/>
       </div>
     )
