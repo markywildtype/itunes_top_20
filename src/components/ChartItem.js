@@ -5,7 +5,7 @@ const ChartItem = (props) => {
     <div className="chart-item">
       <table>
         <tr>
-          <td id="position">{props.songPosition}</td><td><img src={props.songImage} alt={props.songInfo} /></td><td> {props.songArtist} - {props.songInfo}</td>
+          <td id="position">{props.songPosition}</td><td><img src={props.songImage} alt={props.songInfo} /></td><td><span id="artist-name"> {props.songArtist}</span> - {props.songInfo}</td>
         </tr>
       </table>
     </div>

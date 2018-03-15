@@ -1,9 +1,7 @@
 .chart-item {
   background-color: #dddddd;
   margin: 5px;
-  padding: 6px 6px 3px 6px;
-  /* padding: 5px; */
-  /* padding-top: 10px; */
+  padding: 5px 5px 0px 5px;
   border-radius: 10px;
   border: 2px double gray;
   color: black;
@@ -12,7 +10,6 @@
 #position {
   width: 30px;
   font-size: 20pt;
-  /* padding-right: 5px; */
   padding-left: 5px;
 }
 
@@ -20,4 +17,8 @@ img {
   margin-right: 10px;
   margin-left: 5px;
   height: 45px;
+}
+
+#artist-name {
+  font-weight: bold;
 }
